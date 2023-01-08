@@ -15,10 +15,7 @@ public class Main {
 // undefined = now defined!! :D
 
 		List<Loan> loans = ProspectsConverter.parseToLoans("src/main/resources/prospects.txt");
-		  
-//		  System.out.println("Customer Centric Bank Money Bin Inc."
-//			       + "\nLocation Duckburg"
-//			       + "\n");
+
 		  System.out.println("\n		**********************************************************"
 		  		+ "******************************************");
 
@@ -31,20 +28,7 @@ public class Main {
 		    		+ "******************************************");
 
 		  	}
-		  	  
-		  	
-//		  System.out.println("\nClose program to exit. If you wish to edit the Prospects please update the text file named Prospects. "
-//					   	   + "\nThank You for using Money Bin Inc services.");		
-			
-		
-//	System.out.println("\nFirst customer detail test:"
-//			+ "\nCustomerName: " + loans.get(0).getCustomerName() + ""
-//			+ "\nTotal Loan: " + loans.get(0).getTotalLoan() + ""
-//			+ "\nInterestRate in percent: " + loans.get(0).getInterestRate() + ""
-//			+ "\nTotal Years: " + loans.get(0).getTotalYears() + ""
-//			+ "\nTotal Paid Amount: " + loans.get(0).getTotalPaidAmount() + ""
-//			+ "\nMonthRate Raw value: " + loans.get(0).getMonthRate() + ""); 
-		
+
 	}
 
 }

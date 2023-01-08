@@ -11,16 +11,13 @@ import java.util.List;
 public class ProspectsConverter {
 
 public static List<Loan> parseToLoans(String filepath) {
-
-//  Following line only for testing sysout for customerList.
-//  public static void main(String[] args) {
 	
 	List<Loan> customerList = new ArrayList<>();
 	
 	try {
 	  BufferedReader reader = new BufferedReader(new FileReader(filepath));
 	  String customerLine;
-	  customerLine = reader.readLine();
+	  reader.readLine(); // to skip first line, header, in prospects textfile
 		
 	    while((customerLine = reader.readLine()) != null) {
 		  if (customerLine.split(",").length > 4) {
@@ -40,10 +37,8 @@ public static List<Loan> parseToLoans(String filepath) {
 Double.parseDouble(customerLinesplit[2].trim()),Integer.parseInt(customerLinesplit[3].trim()));
 
 			customerList.add(myLoan);
-			
-// 			Output check for customerList conversion during reader creation, commented out below.
-		}	
-//			System.out.println(customerList);
+
+		}
 		
 		reader.close();
 		
