@@ -1,0 +1,2 @@
+Customer,Total loan,Interest,Years
+"Testname1,Testname2",1000,5,2
