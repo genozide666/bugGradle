@@ -12,7 +12,7 @@ public class LoanUnitTest {
     public void powerReturnsPower() {
         double base = 10;
         int exponent = 5;
-        assertEquals( Loan.power (base, exponent), Math.pow(base, exponent));
+        assertEquals( Loan.power (base, exponent), (100000));
     }
     @Test
     public void totalPaidAmountEqualsTotalLoanAndTotalInterest() {
